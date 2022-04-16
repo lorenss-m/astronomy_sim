@@ -1,0 +1,46 @@
+<HTML>
+    <head>
+    <title> cia_sim </title>
+    
+    </head>
+    
+    <body>
+    <link rel="stylesheet" href="main.css">
+    <canvas id=myCanvas width=100 height=100 > </canvas>
+    <div class="timechanger">
+        <input type="range" name="time" id="time" onchange="timechange()" min="100" max="1900" value = "1000">
+        <div id = "timetext">66000x</div>
+    </div>
+    <button class="astroem" id = "astroem">ASTRONOMY</button>
+    <div class = "right">
+        <div class = "objparams">
+            <div class="title">OBJECT PARAMETERS</div>
+            <div class="parcontainer">
+                <span id = "mch"> MASS </span><br>
+                <input type="text" id = "inp" placeholder="(10^22 kg)"> <br>
+                <span class = "signtext"> SIGN </span> <button id = "signchanger" class = "signtext">+</button> <br>
+                <span class = "smol">OPTIONAL</span> <br>
+                VELOCITY <br>
+                <input type="text" id = "vxinp" placeholder="x velocity (10^3 m/s)"> <input type="text" id = "vyinp" placeholder="y velocity (10^3 m/s)">
+            </div>
+        </div>
+        <div class = "hide"></div>
+        <div class = "simparams">
+            <div class="title">SIMULATION PARAMETERS</div>
+            <div class="parcontainer">
+                SIZE <button id = "actualsize">ACTUAL</button><button id = "scaledsize">SCALED</button><button id = "normalizedsize">NORMALIZED</button><br>
+                <span class = "medium">VELOCITY <button id = "velchanger">+</button> </span> <br>
+                <span class = "medium">ACCELERATION <button id = "accchanger">+</button> </span><br>
+                <span class = "smol">R - Reset to saved state, K - Clear array</span> <br>
+            </div>
+            <button id = "play">PAUSE</button>
+        </div>
+    </div>
+    
+    <script src="color.js">
+    </script>
+    <script src="main.js">
+    </script>
+    
+    </body>
+    </html> 

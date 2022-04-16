@@ -1,0 +1,2 @@
+To launch the program, open index.html in your browser of choice, preferably Chrome, though it should work on all browsers.
+You'll get presented with a base simulation of the Earth and Moon rotating around the Sun, in scale.
